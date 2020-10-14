@@ -23,6 +23,8 @@ var is_jumping = false
 
 
 
+
+
 func _physics_process(_delta):
 	velocity.x = clamp(velocity.x,-max_move,max_move)
 		
@@ -54,3 +56,5 @@ func set_animation(anim):
 func die():
 	Backup.current = true
 	queue_free()
+
+
